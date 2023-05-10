@@ -1,0 +1,39 @@
+<div class="global">
+    <div class="form">
+        <form [formGroup]="loginForm">
+            <!-- <div *ngIf="isSubmitted">
+                <p>submit</p>
+                <p>{{authError}}</p>
+            </div> -->
+            <div *ngIf="isSubmitted && authError">
+                <span style="color:red">Invalid email or password!</span>
+            </div>
+            <div>
+                <mat-form-field class="example-form-field" appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <!-- <input matInput type="text" [(ngModel)]="value[0]" formControlName="email"> -->
+                    <input matInput type="text"  formControlName="email">
+                    <!-- <button *ngIf="value[0]" matSuffix mat-icon-button aria-label="Clear" (click)="value[0]=''"><mat-icon>close</mat-icon></button> -->
+                  </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field class="example-form-field" appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <!-- <input matInput type="password" [(ngModel)]="value[1]" formControlName="password"> -->
+                    <input matInput type="password"  formControlName="password">
+                    <!-- <button *ngIf="value[1]" matSuffix mat-icon-button aria-label="Clear" (click)="value[1]=''"><mat-icon>close</mat-icon></button> -->
+                  </mat-form-field>
+            </div>
+    
+            <div class="btn">
+                <button mat-raised-button color="accent" (click)="onSubmit()">Sign In</button>
+            </div>
+    
+            <div class="links">
+                <a routerLink="#">Forgot password </a><br>
+                <a routerLink="/users/register">No account ? Create one here !</a>
+            </div>
+        </form>
+    </div>
+</div>
+

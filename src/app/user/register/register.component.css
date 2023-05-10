@@ -1,0 +1,13 @@
+.global {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.center {
+    display:flex
+}
+
+.btn {
+    text-align: center;
+}

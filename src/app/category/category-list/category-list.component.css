@@ -1,0 +1,12 @@
+table{
+    width:100%;
+    margin:auto;
+}
+#center{
+    display:false;
+    justify-content: center;
+}
+.btn{
+    margin:10px;
+    text-align: center;
+}

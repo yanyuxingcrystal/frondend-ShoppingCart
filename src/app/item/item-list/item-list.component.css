@@ -1,0 +1,33 @@
+.example-card {
+    max-width: 400px;
+    margin : 30px;
+  }
+  
+  .example-header-image {
+    background-image: url('../../../assets/images/Elsa_Profile.png');
+    background-size: cover;
+  }
+
+.global {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.dropdown{
+    display:flex;
+    justify-content: center;
+    margin:5px;
+}
+
+.search {
+    position:relative;
+    margin:10px;
+}
+
+.drop {
+    
+    margin:0px;
+}
+  
